@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+:root {
+  --text-color: #152647;
+  --primary-color: #4460f1;
+  --input-color-txt: #595a5c;
+}
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  position: relative;
+  background: #f2f5ff;
+}
+
+p {
+  color: var(--text-color);
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.wrap-form {
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 12px;
+  max-width: 720px;
+  width: 100%;
+  position: relative;
+  z-index: 1040;
+  overflow: hidden;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.title-form {
+  font-size: 3rem;
+  color: #152647;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.subtitle-form {
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+button{
+  align-self: center;
+  padding: 18px 24px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  min-width: 190px;
+  border-radius: 6px;
+  box-shadow: 4px 31px 39px 4px rgba(68, 96, 241, 0.2);
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover {
+  box-shadow: 4px 11px 19px 4px rgba(68, 96, 241, 0.2);
+  transform:translateY(2px);
+}
+label {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+label > span {
+  display: block;
+  padding: 10px 5px;
+  font-weight: 500;
+}
+input, select, textarea{
+  width: 100%;
+  background-color: #f4f8ff;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: var(--input-color-txt);
+  border:1px solid #dfe7ef;
+}
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  border: 1px solid #4460f18f;
+  outline: 3px solid #4481f14f;
+}
+input::placeholder {
+  color: var(--input-color-txt);
+}
+.col-50{
+  display: flex;
+  width: 100%;
+}
+.col-50 input,
+.col-50 label{
+  width: 100%;
+}
+
+.col-50 > input:last-child,
+.col-50 > label:last-child  {
+  margin-left: 10px;
+}
+.col-50 > input:first-child,
+.col-50 > label:first-child  {
+  margin-right: 10px;
+}
+.red {
+  color: #d16262;
+}
+.invalid {
+  border: 1px solid #d16262;
+  outline: 3px solid #d1626259;
+}

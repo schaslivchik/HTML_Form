@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="wrap-form">
+        <h1 class="title-form">Contact Form</h1>
+        <p class="subtitle-form">
+          Please fill in your information and we'll be sending your order.
+        </p>
+        <form id="form" action="#">
+          <label class="first-name">
+            <span>Your Name</span>
+            <div class="col-50 info-name">
+              <input
+                type="text"
+                name="first-name"
+                placeholder="Firstname"
+                maxlength="36"
+                autofocus
+              />
+              <input
+                type="text"
+                name="last-name"
+                placeholder="Lastname"
+                maxlength="36"
+                autofocus
+              />
+            </div>
+          </label>
+          <div class="col-50">
+            <label>
+              <span>Your Email</span>
+              <input type="email" name="email" placeholder="your@email.com" />
+            </label>
+            <label>
+              <span>Phone<span class="red">*</span></span>
+              <input class="phone"
+                type="tel"
+                name="tel"
+                placeholder="+380978888888"
+                required
+              />
+            </label>
+          </div>
+
+          <label>
+            <span>Message Subject<span class="red">*</span></span>
+            <select name="select" required>
+              <option value="value1" selected>Optione 1</option>
+              <option value="value2">Optione 2</option>
+              <option value="value3">Optione 3</option>
+            </select>
+          </label>
+          <label>
+            <span>Message<span class="red">*</span></span>
+            <textarea class="textarea" name="textarea" cols="30" rows="4" required></textarea>
+          </label>
+          <button type="submit">Submit Form</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
